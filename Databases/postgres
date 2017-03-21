@@ -13,6 +13,10 @@
 12) select * from  playground cross join user23;\\ Cross join 
 13)select * from  playground inner join user23 on playground.equip_id=user23.equip_id;
 14)select * from  playground left/right/full outer join user23 on playground.equip_id=user23.equip_id;  //in left table 1 is full
+15)select count(*) from playground;  //to count total no of entries in psql
+16)select  type, MAX/SUM/AVG/MIN(install_date) FROM playground GROUP BY type;  //Group by avoid duplicate entries and max gives max date
+17)select ARRAY_AGG(install_date) from playground;  //shows all install dates in form of an array
+
 
 
 
