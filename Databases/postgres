@@ -1,1 +1,18 @@
 #This will contain postgres files
+1)sudo -u postgres psql => will open psql cmd
+2)CREATE TABLE playground();
+3)DROP TABLE playground;
+4)\d=> shows all databases, \dt=>shows database tables
+5)INSERT INTO playground (type, color, location, install_date) VALUES ('slide', 'blue', 'south', '2014-04-28');
+6)SELECT * FROM playground;
+7)ALTER TABLE playground ADD last_maint date;  \\ TO add column name and data type
+8)ALTER TABLE playground DROP last_maint;  \\To drop the column
+9)UPDATE playground SET color = 'red' WHERE type = 'slide';  \\TO change the data of a record
+10)select * from playground where color='red' order by location asc; \\order by asc and where clause
+11)reate table user23 ( id int primary key not null, name char(50) not null, equip_id int references playground(equip_id));  //create new table to apply foreign key
+12) select * from  playground cross join user23;\\ Cross join 
+13)select * from  playground inner join user23 on playground.equip_id=user23.equip_id;
+14)select * from  playground left/right/full outer join user23 on playground.equip_id=user23.equip_id;  //in left table 1 is full
+
+
+
