@@ -21,7 +21,7 @@ function validateForm() {
 	{
 		alert(mess);
 		document.getElementById('myForm').reset();
-		document.myForm.firtname.focus();
+		//document.forms["myForm"]["firstname"].focus();
 		return false;
 	}
 
