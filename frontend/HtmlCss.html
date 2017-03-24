@@ -72,6 +72,7 @@
     		cursor: pointer;
 		}
 	</style>
+	<script src="JavaScript.js"></script>
 </head>
 <body>
 	<ul>
@@ -96,7 +97,7 @@
 		<h1>
 			FORM
 		</h1>
-		<form>
+		<form name="myForm" onsubmit="return validateForm()" method="post">
 			First name:<br>
 			<input type="text" name="firstname"><br />
 			Last name:<br>
@@ -109,8 +110,8 @@
   			Marital Status:<br>
   			<input type="radio" name="ms" value="Married"> Married<br>
   			<input type="radio" name="ms" value="Single" checked> Single <br>
-  			Location to travel: <br>
-  			<input list="locations" name="location">
+  			Location to travel*: <br>
+  			<input list="locations" name="location" required>
   			<datalist id="locations">
     			<option value="Jaipur">
     			<option value="Goa">
@@ -118,10 +119,10 @@
     			<option value="Leh">
     			<option value="Kerela">
   			</datalist><br>
-  			Email:<br>
-  			<input type="email" name="email"><br>
-  			Password:<br>
-  			<input type="password" name="pwd"><br>
+  			Email*:<br>
+  			<input type="email" name="email" required><br>
+  			Password*:<br>
+  			<input type="password" name="pwd" required><br>
   			<input type="submit" value="Submit"><br>
   			<input type="reset">
   		</form>
