@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{
+			margin: 0;
+		}
+		ul{
+			list-style-type: none;
+			margin: 0;
+			padding: 0;
+			width: 25%;
+			background-color: grey;
+			height: 100%;
+			position: fixed;
+			overflow: auto;
+
+		}
+		li a:link, a:visited{
+			padding: 8px 16px;
+			display: block;
+			color: #000;
+			text-decoration: none;
+		}
+		li a:hover{
+			background-color: white;
+			color: black;
+
+		}
+		li a:active{
+			
+			background-color: black;
+			color: white;
+
+		}
+		img {
+			opacity: 0.7;
+			}
+		img:hover {
+			opacity: 1.0;
+		}
+		input[type=text],input[type=email], input[type=password], input[list]{
+			width: 80%;
+			padding: 12px 20px;
+			margin: 8px 0;
+			border-radius: 4px;
+		}
+		input[type=radio]{
+			
+			padding: 12px 20px;
+			margin: 8px 0;
+
+		}
+		textarea {
+    		width: 80%;
+    		height: 150px;
+    		padding: 12px 20px;
+    		border: 2px solid #ccc;
+    		border-radius: 4px;
+    		background-color: white;
+    		resize: none;
+		}
+		input[type=submit], input[type=reset] {
+    		background-color: #4CAF50;
+    		width: 85%;
+			margin: 8px 0;
+			border-radius: 4px;
+    		color: white;
+    		padding: 16px 32px;
+    		text-decoration: none;
+    		margin: 4px 2px;
+    		cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<ul>
+		<li><a href="#home">Home</a></li>
+		<li><a href="#form">Form</a></li>
+		<li><a href="#about">About</a></li>
+	</ul>
+	<div id="home" style="margin-left:25%;padding: 20px 16px">
+		<h1>
+			TRAVELINGO
+		</h1>
+		<div class="container">
+		<img class="img-responsive" src="http://youthopia.in/wp-content/uploads/2016/07/35199d6.jpg" alt="Travel" width="370" height="200">
+		<img class="img-responsive" src="http://www.heartofavagabond.com/wp-content/uploads/2014/03/10-Common-Travel-Mistakes-You-Can-Avoid.jpg?x11395" alt="Travel" width="370" height="200">
+	</div>
+		<p>
+			Travel is the movement of people between relatively distant geographical locations, and can involve travel by foot, bicycle, automobile, train, boat, airplane, or other means, with or without luggage, and can be one way or round trip. Travel can also include relatively short stays between successive movements.
+		</p>
+	</div>
+	<hr>
+	<div id="form" style="margin-left:25%;padding: 20px 16px">
+		<h1>
+			FORM
+		</h1>
+		<form>
+			First name:<br>
+			<input type="text" name="firstname"><br />
+			Last name:<br>
+			<input type="text" name="lastname"><br />
+			Address:<br>
+			<textarea name="address" rows="3" placeholder="address"></textarea><br>
+			Gender:<br>
+			<input type="radio" name="gender" value="male" checked> Male<br>
+  			<input type="radio" name="gender" value="female"> Female<br>
+  			Marital Status:<br>
+  			<input type="radio" name="ms" value="Married"> Married<br>
+  			<input type="radio" name="ms" value="Single" checked> Single <br>
+  			Location to travel: <br>
+  			<input list="locations" name="location">
+  			<datalist id="locations">
+    			<option value="Jaipur">
+    			<option value="Goa">
+    			<option value="Kasol">
+    			<option value="Leh">
+    			<option value="Kerela">
+  			</datalist><br>
+  			Email:<br>
+  			<input type="email" name="email"><br>
+  			Password:<br>
+  			<input type="password" name="pwd"><br>
+  			<input type="submit" value="Submit"><br>
+  			<input type="reset">
+  		</form>
+	
+	</div>
+	<hr>
+	<div id="about" style="margin-left:25%;padding: 20px 16px">
+		<center>
+		<h1>About us</h1>
+			<p>
+				
+				This blog is devoted to trips planned your way, and not fixed, restrictive itineraries made by someone else for you. untravel is about customizing every moment of each trip. Picking out experiences that excite you. Staying at places that are truly unique. And charting out every day, at your pace, on your terms.
+				<br><br>
+				Stop travelling. Start Experiencing.
+			
+			</p>
+		</center>
+		<h4>Contact us :</h4>
+		<address>Tower XYZ<br>Sector-11<br>Fbd</address>
+	</div>
+
+</body>
+<html>
