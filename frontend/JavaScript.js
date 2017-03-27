@@ -17,12 +17,20 @@ function validateForm() {
 			ret = false;
 		}
 
+
 	if(ret == false)
 	{
 		alert(mess);
-		document.getElementById('myForm').reset();
-		//document.forms["myForm"]["firstname"].focus();
+		//document.getElementById('myForm').reset();	
 		return false;
 	}
+
+	var val=$("#txt").val();
+	var obj=$("#locations").find("option[value='"+val+"']")
+	if(obj != null && obj.length>0)
+		return true;
+	else
+		alert("Invalid locations ");
+		return false;
 
 }

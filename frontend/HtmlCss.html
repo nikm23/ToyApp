@@ -71,6 +71,10 @@
     		margin: 4px 2px;
     		cursor: pointer;
 		}
+		input[type=submit]:hover, input[type=reset]:hover {
+			background-color: black;
+			color: white;
+		}
 	</style>
 	<script src="JavaScript.js"></script>
 </head>
@@ -111,7 +115,7 @@
   			<input type="radio" name="ms" value="Married"> Married<br>
   			<input type="radio" name="ms" value="Single" checked> Single <br>
   			Location to travel*: <br>
-  			<input list="locations" name="location" required>
+  			<input list="locations" name="location" id='txt'>
   			<datalist id="locations">
     			<option value="Jaipur">
     			<option value="Goa">
