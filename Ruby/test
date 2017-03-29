@@ -1,0 +1,18 @@
+qwertyuiop
+This is test lineIn ruby everything is object
+
+1)puts "Nikhil"  //means put string. It prints the text and return nothing tats y nil is shown.
+2) >>first_name="Nikhil"        >>"#{first_name}"
+3)to_s method can convert any object to string
+4)puts "string is non empty" if !string.empty?
+5)puts "string is non empty " unless string.empty?
+==========================================================================================================
+Method Definition
+def string_mess(str='')
+	if str.empty?
+		"its empty"
+	else
+		"Non empty"
+	end
+end
+>>:string_mess=======================================================================================================
